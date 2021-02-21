@@ -1,0 +1,2 @@
+create view v_classe_frais_etat as
+select cf.id,c.nom,f.designation,cf.montant from classe_frais_etat as cf inner join frais_etat as f on cf.frais_etat_id=f.id inner join classe as c on cf.classe_id=c.id;  
