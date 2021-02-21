@@ -1,4 +1,5 @@
 delimiter |
+drop procedure if exists Ps_obtenirMoisApayer;
 CREATE  PROCEDURE Ps_obtenirMoisApayer(IN p_eleve_id smallint, OUT p_moisApayer VARCHAR(20) )
 BEGIN
 -- déclaration des variables ...
