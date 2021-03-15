@@ -173,5 +173,5 @@ BEGIN
  END IF;
  SET  p_moisApayer =v_moisApayer; -- on retourne la valeur 
 
-END
+END |
 delimiter ;
