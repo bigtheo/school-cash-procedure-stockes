@@ -21,7 +21,7 @@ delimiter ;
 -- restauration 
 drop trigger if exists AfterDeleteOnPaiement_exetat_archive;
 delimiter |
-create trigger AfterDeleteOnPaiement_exetat_archive after delete on paiement_exetat for each row
+create trigger AfterDeleteOnPaiement_exetat_archive after delete on paiement_exetat_archive for each row
 begin
 INSERT INTO paiement_exetat(id,date_paie,eleve_id,frais_exetat_id,user_id) 
 values
